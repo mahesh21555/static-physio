@@ -106,7 +106,7 @@ export default function GallerySection() {
         {/* Gallery Grid */}
         <motion.div
           layout
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"
+          className="grid grid-cols-3 sm:grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-4"
         >
           <AnimatePresence mode="popLayout">
             {filteredImages.map((image, index) => (
@@ -117,7 +117,7 @@ export default function GallerySection() {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.4, delay: index * 0.05 }}
-                className={`group relative rounded-2xl overflow-hidden cursor-pointer ${
+                className={`group relative rounded-lg sm:rounded-2xl overflow-hidden cursor-pointer ${
                   index === 0 || index === 5
                     ? "sm:col-span-2 sm:row-span-2"
                     : ""
@@ -131,8 +131,8 @@ export default function GallerySection() {
                   height={400}
                   className={`w-full object-cover transition-transform duration-700 group-hover:scale-110 ${
                     index === 0 || index === 5
-                      ? "h-[300px] sm:h-full"
-                      : "h-[250px]"
+                      ? "h-[100px] sm:h-full"
+                      : "h-[100px] sm:h-[250px]"
                   }`}
                 />
                 {/* Hover overlay */}
