@@ -9,6 +9,7 @@ import {
   MessageCircle,
 } from "lucide-react";
 import ScrollAnimationWrapper from "./ScrollAnimationWrapper";
+import { WhatsAppIcon } from "./WhatsAppIcon";
 
 const contactInfo = [
   {
@@ -22,14 +23,14 @@ const contactInfo = [
   {
     icon: Phone,
     label: "Phone",
-    value: "+91 95660 71830",
-    href: "tel:+919566071830",
+    value: "+91 74486 44377",
+    href: "tel:+917448644377",
   },
   {
     icon: Mail,
     label: "Email",
-    value: "info@staticphysio.com",
-    href: "mailto:info@staticphysio.com",
+    value: "staticphysiocentre@gmail.com",
+    href: "mailto:staticphysiocentre@gmail.com",
   },
   {
     icon: Clock,
@@ -70,7 +71,7 @@ export default function ContactSection() {
     e.preventDefault();
     // Build WhatsApp message
     const msg = `Hello! I'd like to book a consultation.\n\nName: ${formData.name}\nPhone: ${formData.phone}\nEmail: ${formData.email}\nTreatment: ${formData.treatment}\nMessage: ${formData.message}`;
-    window.location.href = `https://wa.me/919566071830?text=${encodeURIComponent(msg)}`;
+    window.location.href = `https://wa.me/917448644377?text=${encodeURIComponent(msg)}`;
   };
 
   return (
@@ -157,12 +158,12 @@ export default function ContactSection() {
               {/* Social / WhatsApp CTA */}
               <div className="pt-4">
                 <a
-                  href="https://wa.me/919566071830"
+                  href="https://wa.me/917448644377"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#25D366] to-[#128C7E] text-white text-sm font-semibold rounded-full shadow-lg shadow-[#25D366]/20 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"
                 >
-                  <MessageCircle size={18} />
+                  <WhatsAppIcon size={18} />
                   Chat on WhatsApp
                 </a>
               </div>
@@ -284,7 +285,7 @@ export default function ContactSection() {
                   type="submit"
                   className="w-full flex items-center justify-center gap-2 px-8 py-3.5 bg-green-500 hover:bg-green-600 text-white text-sm font-bold rounded-xl shadow-lg shadow-green-500/20 hover:-translate-y-0.5 transition-all duration-300"
                 >
-                  <MessageCircle size={18} />
+                  <WhatsAppIcon size={18} />
                   Send Message
                 </button>
               </form>

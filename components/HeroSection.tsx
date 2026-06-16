@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Sparkles, MessageCircle, MapPin } from "lucide-react";
 import Image from "next/image";
+import { WhatsAppIcon } from "./WhatsAppIcon";
 
 const floatingCards = [
   { text: "Experienced Therapists", icon: "👨‍⚕️", delay: 0.8 },
@@ -22,6 +23,20 @@ export default function HeroSection() {
       {/* Clean white background */}
       <div className="absolute inset-0 bg-white" />
 
+      {/* Acronym Banner */}
+      <div className="absolute top-20 left-0 right-0 w-full bg-[#1A8B9D] py-3 lg:py-4 z-20 shadow-md border-b border-white/10">
+        <div className="max-w-7xl mx-auto px-4">
+          <p className="text-white font-sans text-center flex flex-wrap justify-center items-baseline gap-x-4 lg:gap-x-5 gap-y-2">
+            <span className="whitespace-nowrap"><span className="text-[28px] md:text-[36px] lg:text-[40px] font-semibold leading-none">S</span><span className="text-[11px] md:text-[13px] lg:text-[15px] font-medium tracking-[0.15em] lg:tracking-[0.2em] ml-0.5 lg:ml-1 uppercase">trengthening</span></span>
+            <span className="whitespace-nowrap"><span className="text-[28px] md:text-[36px] lg:text-[40px] font-semibold leading-none">T</span><span className="text-[11px] md:text-[13px] lg:text-[15px] font-medium tracking-[0.15em] lg:tracking-[0.2em] ml-0.5 lg:ml-1 uppercase">hrough</span></span>
+            <span className="whitespace-nowrap"><span className="text-[28px] md:text-[36px] lg:text-[40px] font-semibold leading-none">A</span><span className="text-[11px] md:text-[13px] lg:text-[15px] font-medium tracking-[0.15em] lg:tracking-[0.2em] ml-0.5 lg:ml-1 uppercase">ssessment,</span></span>
+            <span className="whitespace-nowrap"><span className="text-[28px] md:text-[36px] lg:text-[40px] font-semibold leading-none">T</span><span className="text-[11px] md:text-[13px] lg:text-[15px] font-medium tracking-[0.15em] lg:tracking-[0.2em] ml-0.5 lg:ml-1 uppercase">reatment,</span></span>
+            <span className="whitespace-nowrap"><span className="text-[28px] md:text-[36px] lg:text-[40px] font-semibold leading-none">I</span><span className="text-[11px] md:text-[13px] lg:text-[15px] font-medium tracking-[0.15em] lg:tracking-[0.2em] ml-0.5 lg:ml-1 uppercase">mprovement and</span></span>
+            <span className="whitespace-nowrap"><span className="text-[28px] md:text-[36px] lg:text-[40px] font-semibold leading-none">C</span><span className="text-[11px] md:text-[13px] lg:text-[15px] font-medium tracking-[0.15em] lg:tracking-[0.2em] ml-0.5 lg:ml-1 uppercase">are</span></span>
+          </p>
+        </div>
+      </div>
+
       {/* Subtle decorative blurs — no dots */}
       <div className="absolute top-20 left-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl" />
       <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
@@ -29,7 +44,7 @@ export default function HeroSection() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 lg:py-20 w-full">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Content */}
-          <div className="order-2 lg:order-1">
+          <div className="order-1 lg:order-1">
             {/* Badge */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -99,7 +114,7 @@ export default function HeroSection() {
                 }}
                 className="group flex items-center gap-2 px-8 py-3.5 bg-gradient-to-r from-primary to-secondary text-white font-semibold text-sm rounded-full shadow-lg shadow-primary/25 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"
               >
-                <MessageCircle size={18} />
+                <WhatsAppIcon size={18} />
                 Book Appointment
               </button>
               <a
@@ -141,7 +156,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, x: 60 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="relative order-1 lg:order-2"
+            className="relative order-2 lg:order-2"
           >
             <div className="relative z-10">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-primary/15">
@@ -157,28 +172,7 @@ export default function HeroSection() {
               </div>
             </div>
 
-            {/* Floating Cards */}
-            {floatingCards.map((card, index) => (
-              <motion.div
-                key={card.text}
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5, delay: card.delay }}
-                className={`hidden lg:flex absolute z-20 bg-white backdrop-blur-md rounded-2xl shadow-xl border border-border/50 px-4 py-3 items-center gap-3 ${
-                  index === 0
-                    ? "top-8 -right-2 lg:right-[-20px]"
-                    : index === 1
-                    ? "top-1/2 -right-4 lg:right-[-30px] -translate-y-1/2"
-                    : "bottom-12 -right-2 lg:right-[-20px]"
-                }`}
-                style={{ animation: `float 3s ease-in-out ${index * 0.5}s infinite` }}
-              >
-                <span className="text-xl">{card.icon}</span>
-                <span className="text-sm font-semibold text-text-primary whitespace-nowrap">
-                  {card.text}
-                </span>
-              </motion.div>
-            ))}
+
 
             {/* Decorative ring */}
             <div className="absolute -top-6 -left-6 w-24 h-24 border-4 border-accent/20 rounded-full" />

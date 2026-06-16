@@ -4,6 +4,7 @@ import QuickContactStrip from "@/components/QuickContactStrip";
 import HomeSection from "@/components/HomeSection";
 import ServicesSection from "@/components/ServicesSection";
 import AboutSection from "@/components/AboutSection";
+import TeamSection from "@/components/TeamSection";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import GallerySection from "@/components/GallerySection";
 import ContactSection from "@/components/ContactSection";
@@ -18,6 +19,7 @@ export default function Home() {
       <HomeSection />
       <ServicesSection />
       <AboutSection />
+      <TeamSection />
       <WhyChooseUs />
       <GallerySection />
       <ContactSection />

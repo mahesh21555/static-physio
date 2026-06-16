@@ -6,6 +6,7 @@ import { Menu, X, MessageCircle } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import BookingModal from "./BookingModal";
+import { WhatsAppIcon } from "./WhatsAppIcon";
 
 const navLinks = [
   { label: "HOME", href: "#home" },
@@ -87,7 +88,7 @@ export default function Navbar() {
                 width={224}
                 height={56}
                 priority
-                className="h-8 w-auto object-contain shrink-0"
+                className="h-14 w-auto object-contain shrink-0"
               />
             </Link>
 
@@ -125,7 +126,7 @@ export default function Navbar() {
                 onClick={() => setBookingOpen(true)}
                 className="flex items-center gap-1.5 sm:gap-2 px-3 sm:px-6 py-2 sm:py-2.5 bg-gradient-to-r from-primary to-secondary text-white text-xs sm:text-sm font-semibold rounded-full shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30 hover:-translate-y-0.5 transition-all duration-300"
               >
-                <MessageCircle size={14} className="sm:w-4 sm:h-4" />
+                <WhatsAppIcon size={14} className="sm:w-4 sm:h-4" />
                 <span className="hidden sm:inline">BOOK APPOINTMENT</span>
                 <span className="sm:hidden">BOOK</span>
               </button>
@@ -177,7 +178,7 @@ export default function Navbar() {
                       alt="Static Physio"
                       width={240}
                       height={60}
-                      className="h-7 w-auto object-contain shrink-0"
+                      className="h-12 w-auto object-contain shrink-0"
                     />
                   </div>
                   <button
@@ -222,7 +223,7 @@ export default function Navbar() {
                     }}
                     className="flex items-center justify-center gap-2 w-full px-6 py-3 bg-gradient-to-r from-primary to-secondary text-white text-sm font-semibold rounded-full shadow-lg"
                   >
-                    <MessageCircle size={16} />
+                    <WhatsAppIcon size={16} />
                     BOOK APPOINTMENT
                   </button>
                 </div>

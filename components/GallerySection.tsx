@@ -84,24 +84,7 @@ export default function GallerySection() {
           </p>
         </ScrollAnimationWrapper>
 
-        {/* Category Tabs */}
-        <ScrollAnimationWrapper delay={0.1} className="mb-10">
-          <div className="flex flex-wrap justify-center gap-2">
-            {categories.map((cat) => (
-              <button
-                key={cat}
-                onClick={() => setActiveCategory(cat)}
-                className={`px-5 py-2 text-sm font-medium rounded-full transition-all duration-300 ${
-                  activeCategory === cat
-                    ? "bg-gradient-to-r from-primary to-secondary text-white shadow-md shadow-primary/20"
-                    : "bg-section-bg text-text-secondary hover:text-primary hover:bg-primary/5 border border-border/50"
-                }`}
-              >
-                {cat}
-              </button>
-            ))}
-          </div>
-        </ScrollAnimationWrapper>
+
 
         {/* Gallery Grid */}
         <motion.div

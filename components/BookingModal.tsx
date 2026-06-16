@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, MessageCircle } from "lucide-react";
+import { WhatsAppIcon } from "./WhatsAppIcon";
 
 interface BookingModalProps {
   isOpen: boolean;
@@ -55,7 +56,7 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
       msg += `*Additional Notes:* ${formData.message}\n`;
     }
     
-    window.location.href = `https://wa.me/919566071830?text=${encodeURIComponent(msg)}`;
+    window.location.href = `https://wa.me/917448644377?text=${encodeURIComponent(msg)}`;
     onClose();
   };
 
@@ -191,7 +192,7 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
                   disabled={!formData.name || !formData.phone || !formData.email || !formData.treatment}
                   className="w-full flex items-center justify-center gap-2 px-6 py-3 bg-green-500 hover:bg-green-600 disabled:bg-gray-300 disabled:cursor-not-allowed text-white text-sm font-bold rounded-lg shadow-lg shadow-green-500/30 hover:shadow-lg hover:shadow-green-500/40 hover:-translate-y-0.5 transition-all duration-300"
                 >
-                  <MessageCircle size={18} />
+                  <WhatsAppIcon size={18} />
                   Send Message
                 </button>
               </div>

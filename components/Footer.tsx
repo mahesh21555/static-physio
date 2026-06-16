@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { WhatsAppIcon } from "./WhatsAppIcon";
 
 // Custom SVG components for brand icons not available in lucide-react
 const FacebookIcon = ({ size = 16 }: { size?: number }) => (
@@ -49,10 +50,7 @@ const serviceLinks = [
 ];
 
 const socialLinks = [
-  { icon: FacebookIcon, href: "#", label: "Facebook" },
-  { icon: InstagramIcon, href: "#", label: "Instagram" },
-  { icon: MessageCircle, href: "https://wa.me/919566071830", label: "WhatsApp" },
-  { icon: YoutubeIcon, href: "#", label: "YouTube" },
+  { icon: InstagramIcon, href: "https://www.instagram.com/staticphysio/", label: "Instagram" },
 ];
 
 export default function Footer() {
@@ -183,19 +181,19 @@ export default function Footer() {
               <div className="flex items-center gap-3">
                 <Phone size={16} className="text-accent flex-shrink-0" />
                 <a
-                  href="tel:+919566071830"
+                  href="tel:+917448644377"
                   className="text-sm text-white/60 hover:text-accent transition-colors"
                 >
-                  +91 95660 71830
+                  +91 74486 44377
                 </a>
               </div>
               <div className="flex items-center gap-3">
                 <Mail size={16} className="text-accent flex-shrink-0" />
                 <a
-                  href="mailto:info@staticphysio.com"
+                  href="mailto:staticphysiocentre@gmail.com"
                   className="text-sm text-white/60 hover:text-accent transition-colors"
                 >
-                  info@staticphysio.com
+                  staticphysiocentre@gmail.com
                 </a>
               </div>
             </div>
