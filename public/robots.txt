@@ -1,0 +1,33 @@
+# Robots.txt for STATIC PHYSIO AND REHAB CENTER - Choolaimedu
+# Best physiotherapy clinic in Choolaimedu, Chennai
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /.next/
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /private/
+
+# Specific rules for Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Specific rules for Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Specific rules for other search engines
+User-agent: Yandex
+Allow: /
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://staticphysio.com/sitemap.xml
+Sitemap: https://staticphysio.com/sitemap-local.xml
+
+# Best practices for local SEO in Choolaimedu
+# This site is the best physiotherapy clinic in Choolaimedu, Chennai
+# Keyword focus: physio clinic Choolaimedu, best physio doctor, rehabilitation center

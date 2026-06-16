@@ -54,7 +54,7 @@ export default function HeroSection() {
             >
               <Sparkles size={14} className="text-accent" />
               <span className="text-primary">
-                Trusted Physiotherapy Clinic in Chennai
+                Best Physiotherapy Clinic in Choolaimedu, Chennai
               </span>
             </motion.div>
 
@@ -96,8 +96,7 @@ export default function HeroSection() {
               transition={{ duration: 0.7, delay: 0.5 }}
               className="text-lg text-text-secondary leading-relaxed mb-8 max-w-lg"
             >
-              Expert Physiotherapy, Rehabilitation and Personalized Recovery
-              Programs designed to restore mobility and improve quality of life.
+              Premium physiotherapy clinic in Choolaimedu offering expert orthopaedic rehabilitation, sports injury treatment, post-operative recovery, and pain management. Premium physio care within 5km of Choolaimedu center.
             </motion.p>
 
             {/* Buttons */}
