@@ -13,45 +13,87 @@ import { StaggerContainer, StaggerItem } from "./ScrollAnimationWrapper";
 
 const services = [
   {
-    title: "Sports Injury Rehabilitation",
+    title: "Orthopaedic Rehabilitation",
     description:
-      "Specialized treatment for sports injuries, sprains, and performance enhancement.",
-    icon: Dumbbell,
+      "Specialized treatment for joint pain, muscle, and bone problems.",
+    icon: Bone,
     gradient: "from-primary to-secondary",
   },
   {
-    title: "Orthopedic Physiotherapy",
+    title: "Sports Injury Management",
     description:
-      "Treatment for joint pain, muscle, bone problems and posture correction.",
-    icon: Bone,
+      "Treatment for sports injuries, sprains, and performance enhancement.",
+    icon: Dumbbell,
     gradient: "from-secondary to-accent",
   },
   {
-    title: "Post Surgical Rehabilitation",
+    title: "Post-operative Rehabilitation",
     description:
-      "Personalized recovery programs after surgery for faster healing and strength.",
+      "Personalized recovery programs after surgery for faster healing.",
     icon: HeartPulse,
     gradient: "from-accent to-[#0D8DAA]",
   },
   {
-    title: "Neurological Rehabilitation",
+    title: "Neck & Back Pain Treatment",
     description:
-      "Therapy for neurological conditions like stroke, paralysis, and balance disorders.",
-    icon: Brain,
+      "Specialized therapy for neck and back pain relief and recovery.",
+    icon: Bone,
     gradient: "from-primary to-accent",
   },
   {
-    title: "Manual Therapy",
+    title: "Knee Pain & Arthritis Care",
     description:
-      "Hands-on techniques to reduce pain, improve mobility and restore function.",
+      "Comprehensive treatment for knee pain and arthritis management.",
     icon: Hand,
     gradient: "from-[#0D8DAA] to-primary",
   },
   {
-    title: "Pain Management",
+    title: "Shoulder Rehabilitation",
     description:
-      "Advanced pain relief techniques for chronic pain and injury recovery.",
+      "Targeted therapy for shoulder injuries and mobility restoration.",
     icon: Shield,
+    gradient: "from-secondary to-primary",
+  },
+  {
+    title: "Neurological Physiotherapy",
+    description:
+      "Therapy for neurological conditions and balance disorders.",
+    icon: Brain,
+    gradient: "from-primary to-secondary",
+  },
+  {
+    title: "Pediatric Physiotherapy",
+    description:
+      "Specialized care for children's physical development and recovery.",
+    icon: HeartPulse,
+    gradient: "from-secondary to-accent",
+  },
+  {
+    title: "Geriatric Physiotherapy",
+    description:
+      "Customized therapy for seniors to improve mobility and independence.",
+    icon: Shield,
+    gradient: "from-accent to-[#0D8DAA]",
+  },
+  {
+    title: "Dry Needling & Manual Therapy",
+    description:
+      "Advanced techniques to reduce pain and improve mobility.",
+    icon: Hand,
+    gradient: "from-primary to-accent",
+  },
+  {
+    title: "Electrotherapy",
+    description:
+      "IPT, TENS, Ultrasound, Traction for pain relief and healing.",
+    icon: Dumbbell,
+    gradient: "from-[#0D8DAA] to-primary",
+  },
+  {
+    title: "Posture Correction & Ergonomic Advice",
+    description:
+      "Professional guidance for better posture and workplace ergonomics.",
+    icon: Brain,
     gradient: "from-secondary to-primary",
   },
 ];
@@ -77,7 +119,7 @@ export default function ServicesSection() {
 
         {/* Services Grid */}
         <StaggerContainer
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
+          className="grid grid-cols-3 gap-6 lg:gap-8"
           staggerDelay={0.1}
         >
           {services.map((service) => (
