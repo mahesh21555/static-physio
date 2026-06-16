@@ -15,84 +15,84 @@ const services = [
   {
     title: "Orthopaedic Rehabilitation",
     description:
-      "Best orthopaedic physiotherapy in Choolaimedu for joint pain, muscle, and bone problems with expert recovery programs.",
+      "Best orthopaedic physiotherapy for joint pain, muscle, and bone problems with expert recovery programs.",
     icon: Bone,
     gradient: "from-primary to-secondary",
   },
   {
     title: "Sports Injury Management",
     description:
-      "Professional sports injury treatment in Choolaimedu for sprains, strains, and athletic performance enhancement.",
+      "Professional sports injury treatment for sprains, strains, and athletic performance enhancement.",
     icon: Dumbbell,
     gradient: "from-secondary to-accent",
   },
   {
     title: "Post-operative Rehabilitation",
     description:
-      "Expert post-surgery recovery programs in Choolaimedu for faster healing and strength restoration.",
+      "Expert post-surgery recovery programs for faster healing and strength restoration.",
     icon: HeartPulse,
     gradient: "from-accent to-[#0D8DAA]",
   },
   {
     title: "Neck & Back Pain Treatment",
     description:
-      "Specialized neck and back pain therapy in Choolaimedu clinic for lasting relief and mobility improvement.",
+      "Specialized neck and back pain therapy for lasting relief and mobility improvement.",
     icon: Bone,
     gradient: "from-primary to-accent",
   },
   {
     title: "Knee Pain & Arthritis Care",
     description:
-      "Expert knee pain and arthritis treatment in Choolaimedu with proven physiotherapy techniques.",
+      "Expert knee pain and arthritis treatment with proven physiotherapy techniques.",
     icon: Hand,
     gradient: "from-[#0D8DAA] to-primary",
   },
   {
     title: "Shoulder Rehabilitation",
     description:
-      "Targeted shoulder injury therapy in Choolaimedu for complete mobility and function restoration.",
+      "Targeted shoulder injury therapy for complete mobility and function restoration.",
     icon: Shield,
     gradient: "from-secondary to-primary",
   },
   {
     title: "Neurological Physiotherapy",
     description:
-      "Advanced neurological therapy in Choolaimedu for stroke, paralysis, and balance disorder recovery.",
+      "Advanced neurological therapy for stroke, paralysis, and balance disorder recovery.",
     icon: Brain,
     gradient: "from-primary to-secondary",
   },
   {
     title: "Pediatric Physiotherapy",
     description:
-      "Specialized pediatric physical therapy in Choolaimedu for children's development and rehabilitation.",
+      "Specialized pediatric physical therapy for children's development and rehabilitation.",
     icon: HeartPulse,
     gradient: "from-secondary to-accent",
   },
   {
     title: "Geriatric Physiotherapy",
     description:
-      "Senior physiotherapy care in Choolaimedu to improve mobility, balance, and quality of life.",
+      "Senior physiotherapy care to improve mobility, balance, and quality of life.",
     icon: Shield,
     gradient: "from-accent to-[#0D8DAA]",
   },
   {
     title: "Dry Needling & Manual Therapy",
     description:
-      "Advanced dry needling and manual therapy in Choolaimedu for pain relief and rapid recovery.",
+      "Advanced dry needling and manual therapy for pain relief and rapid recovery.",
     icon: Hand,
     gradient: "from-primary to-accent",
   },
   {
     title: "Electrotherapy & TENS",
     description:
-      "Modern electrotherapy, ultrasound, and TENS treatment in Choolaimedu for effective pain management.",
+      "Modern electrotherapy, ultrasound, and TENS treatment for effective pain management.",
     icon: Dumbbell,
     gradient: "from-[#0D8DAA] to-primary",
   },
   {
     title: "Posture Correction & Ergonomic Advice",
     description:
-      "Professional posture correction and workplace ergonomic guidance in Choolaimedu clinic.",
+      "Professional posture correction and workplace ergonomic guidance.",
     icon: Brain,
     gradient: "from-secondary to-primary",
   },
@@ -154,6 +154,32 @@ export default function ServicesSection() {
             </StaggerItem>
           ))}
         </StaggerContainer>
+
+        {/* Visit Clinic Button */}
+        <div className="mt-12 lg:mt-16 flex justify-center">
+          <ScrollAnimationWrapper>
+            <a
+              href="https://maps.app.goo.gl/iipoYhBZcEVJ4qqn6"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-primary to-secondary text-white font-semibold text-base rounded-full shadow-lg shadow-primary/25 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                className="text-white"
+              >
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" />
+                <path d="M12 4v8l6 3" />
+              </svg>
+              Visit Our Clinic on Google Maps
+            </a>
+          </ScrollAnimationWrapper>
+        </div>
       </div>
     </section>
   );

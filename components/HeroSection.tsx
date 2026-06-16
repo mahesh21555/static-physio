@@ -12,7 +12,7 @@ const floatingCards = [
 ];
 
 const GOOGLE_MAPS_URL =
-  "https://www.google.com/maps/place/Static+Physio+and+Rehab+Center/@13.0605043,80.2130353,17z/data=!3m1!4b1!4m6!3m5!1s0x3a5267005849ecbf:0x63d927d7a3c2cdd2!8m2!3d13.0604991!4d80.2156102!16s%2Fg%2F11npt4mndb?entry=ttu&g_ep=EgoyMDI2MDYwOS4wIKXMDSoASAFQAw%3D%3D";
+  "https://maps.app.goo.gl/iipoYhBZcEVJ4qqn6";
 
 export default function HeroSection() {
   return (
