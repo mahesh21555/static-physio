@@ -54,7 +54,6 @@ export default function ContactSection() {
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
-    email: "",
     treatment: "",
     message: "",
   });
@@ -70,7 +69,7 @@ export default function ContactSection() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Build WhatsApp message
-    const msg = `Hello! I'd like to book a consultation.\n\nName: ${formData.name}\nPhone: ${formData.phone}\nEmail: ${formData.email}\nTreatment: ${formData.treatment}\nMessage: ${formData.message}`;
+    const msg = `Hello! I'd like to book a consultation.\n\nName: ${formData.name}\nPhone: ${formData.phone}\nTreatment: ${formData.treatment}\nMessage: ${formData.message}`;
     window.location.href = `https://wa.me/917448644377?text=${encodeURIComponent(msg)}`;
   };
 
@@ -221,24 +220,7 @@ export default function ContactSection() {
                   </div>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-                  <div>
-                    <label
-                      htmlFor="email"
-                      className="block text-xs font-medium text-text-secondary uppercase tracking-wide mb-1.5"
-                    >
-                      Email Address
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      placeholder="you@example.com"
-                      className="w-full px-4 py-3 text-sm bg-section-bg border border-border/50 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all text-text-primary placeholder:text-text-secondary/50"
-                    />
-                  </div>
+                <div className="mb-4">
                   <div>
                     <label
                       htmlFor="treatment"

@@ -26,7 +26,6 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
-    email: "",
     treatment: "",
     message: "",
   });
@@ -50,7 +49,6 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
     let msg = `Hi! I'd like to book a consultation.\n\n`;
     msg += `*Name:* ${formData.name}\n`;
     msg += `*Phone:* ${formData.phone}\n`;
-    msg += `*Email:* ${formData.email}\n`;
     msg += `*Treatment Required:* ${formData.treatment}\n`;
     if (formData.message.trim()) {
       msg += `*Additional Notes:* ${formData.message}\n`;
@@ -134,21 +132,7 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
                 </div>
               </div>
 
-              <div>
-                <label className="block text-xs font-medium text-text-secondary uppercase tracking-wide mb-2">
-                  Email Address
-                </label>
-                <input
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  placeholder="john@example.com"
-                  dir="ltr"
-                  className="w-full px-4 py-2.5 text-sm bg-section-bg border border-border/50 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all text-text-primary placeholder:text-text-secondary/50"
-                />
-              </div>
+
 
               <div>
                 <label className="block text-xs font-medium text-text-secondary uppercase tracking-wide mb-2">
@@ -189,7 +173,7 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
               <div className="p-6 border-t border-border/50 bg-section-bg/50 shrink-0" dir="ltr">
                 <button
                   type="submit"
-                  disabled={!formData.name || !formData.phone || !formData.email || !formData.treatment}
+                  disabled={!formData.name || !formData.phone || !formData.treatment}
                   className="w-full flex items-center justify-center gap-2 px-6 py-3 bg-green-500 hover:bg-green-600 disabled:bg-gray-300 disabled:cursor-not-allowed text-white text-sm font-bold rounded-lg shadow-lg shadow-green-500/30 hover:shadow-lg hover:shadow-green-500/40 hover:-translate-y-0.5 transition-all duration-300"
                 >
                   <WhatsAppIcon size={18} />

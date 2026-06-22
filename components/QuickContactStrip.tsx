@@ -25,9 +25,9 @@ const contactCards = [
   {
     title: "Location",
     subtitle: "Visit our clinic",
-    detail: "Chennai, Tamil Nadu",
+    detail: "Static Physio Choolaimedu",
     icon: MapPin,
-    href: "https://www.google.com/maps/place/Static+Physio+and+Rehab+Center/@13.0605043,80.2130353,17z",
+    href: "https://maps.app.goo.gl/tLkAQRWXu2E8FDkZ9",
     gradient: "from-accent to-[#0D8DAA]",
     shadowColor: "shadow-accent/20",
   },

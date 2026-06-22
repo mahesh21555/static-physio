@@ -123,7 +123,7 @@ export default function ServicesSection() {
         >
           {services.map((service) => (
             <StaggerItem key={service.title}>
-              <div className="group relative bg-white rounded-[20px] p-6 shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-all duration-400 hover:-translate-y-2 border border-border/50 overflow-hidden cursor-pointer flex gap-4">
+              <div className="group relative bg-white rounded-2xl sm:rounded-[20px] p-4 sm:p-6 shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-all duration-400 hover:-translate-y-2 border border-border/50 overflow-hidden cursor-pointer flex gap-3 sm:gap-4 items-start">
                 {/* Background decoration on hover */}
                 <div
                   className={`absolute top-0 right-0 w-32 h-32 bg-gradient-to-br ${service.gradient} opacity-0 group-hover:opacity-5 rounded-bl-full transition-opacity duration-500`}
@@ -131,17 +131,17 @@ export default function ServicesSection() {
 
                 {/* Icon */}
                 <div
-                  className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${service.gradient} flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 flex-shrink-0`}
+                  className={`w-10 h-10 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl bg-gradient-to-br ${service.gradient} flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 flex-shrink-0`}
                 >
-                  <service.icon size={26} className="text-white" />
+                  <service.icon className="w-5 h-5 sm:w-[26px] sm:h-[26px] text-white" />
                 </div>
 
                 {/* Content */}
                 <div className="flex-1 min-w-0">
-                  <h3 className="text-base font-bold text-text-primary mb-2 group-hover:text-primary transition-colors duration-300">
+                  <h3 className="text-sm sm:text-base font-bold text-text-primary mb-1 sm:mb-2 group-hover:text-primary transition-colors duration-300 leading-tight">
                     {service.title}
                   </h3>
-                  <p className="text-sm text-text-secondary leading-relaxed line-clamp-2">
+                  <p className="text-xs sm:text-sm text-text-secondary leading-relaxed line-clamp-2">
                     {service.description}
                   </p>
                 </div>

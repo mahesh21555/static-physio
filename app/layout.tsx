@@ -58,7 +58,6 @@ export const metadata: Metadata = {
     images: ["/images/clinic.jpg"],
   },
   robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
-  canonical: "https://staticphysio.com",
   alternates: {
     canonical: "https://staticphysio.com",
   },
