@@ -30,23 +30,23 @@ export default function TeamSection() {
           </p>
         </ScrollAnimationWrapper>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8 lg:gap-10">
           {teamMembers.map((member, index) => (
             <ScrollAnimationWrapper
               key={member.name}
               delay={index * 0.1}
               className="group"
             >
-              <div className="bg-section-bg rounded-2xl p-6 shadow-[var(--shadow-card)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-border/50 text-center h-full flex flex-col items-center">
+              <div className="bg-section-bg rounded-2xl p-3 sm:p-6 shadow-[var(--shadow-card)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-border/50 text-center h-full flex flex-col items-center">
                 {/* Image Placeholder */}
-                <div className="w-24 h-24 sm:w-32 sm:h-32 bg-primary/10 rounded-full flex items-center justify-center mb-6 shadow-inner group-hover:scale-105 transition-transform duration-300 relative overflow-hidden">
-                  <User size={48} className="text-primary/40" />
+                <div className="w-16 h-16 sm:w-32 sm:h-32 bg-primary/10 rounded-full flex items-center justify-center mb-3 sm:mb-6 shadow-inner group-hover:scale-105 transition-transform duration-300 relative overflow-hidden">
+                  <User className="w-8 h-8 sm:w-12 sm:h-12 text-primary/40" />
                   <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
-                <h3 className="text-lg font-bold text-text-primary mb-1">
+                <h3 className="text-sm sm:text-lg font-bold text-text-primary mb-1 leading-tight">
                   {member.name}
                 </h3>
-                <p className="text-sm font-medium text-primary">
+                <p className="text-xs sm:text-sm font-medium text-primary">
                   {member.qualifications}
                 </p>
               </div>

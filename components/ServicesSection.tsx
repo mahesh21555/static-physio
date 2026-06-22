@@ -116,9 +116,8 @@ export default function ServicesSection() {
           </p>
         </ScrollAnimationWrapper>
 
-        {/* Services Grid */}
         <StaggerContainer
-          className="grid grid-cols-2 gap-6 lg:gap-8"
+          className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 lg:gap-8"
           staggerDelay={0.1}
         >
           {services.map((service) => (
